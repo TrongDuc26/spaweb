@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.content {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: white;
+}
+.content h1 {
+    font-size: 70px;
+    margin-top: 80px;
+}
+.content p {
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+button {
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid LightCoral;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+span {
+    background: LightCoral;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.3s;
+}
+button:hover span {
+    width: 100%;
+}
+button:hover {
+    border: none;
+}
+.container1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1920px;
+    flex-wrap: wrap;
+    padding: 40px 0;
+}
+.container1 .card {
+    position: relative;
+    width: 320px;
+    height: 400px;
+    box-shadow: inset 5px 5px 5px rgba(0,0,0,0.05),
+                inset -5px -5px -5px rgba(255,255,255,0.5),
+                5px 5px 5px rgba(0,0,0,0.05),
+                -5px -5px -5px rgba(255,255,255,0.5);
+    border-radius: 15px;    
+    margin: 30px;
+}
+.container1 .card .box {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    background: #ebf5fc;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    border: 2px solid LightCoral;
+}
+.container1 .card:hover .box {
+    transform: translateY(-20px);
+    box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+    background: linear-gradient(45deg,lightpink,LightCoral);
+    border: none;
+}
+.container1 .card .box .box-content {
+    padding: 20px;
+    text-align: center;
+}
+.container1 .card .box .box-content h2 {
+    position: absolute;
+    top: -10px;
+    right: 30px;
+    font-size: 8em;
+    color: rgba(0,0,0,0.05);
+    transform: 0.5s;
+    pointer-events: none;
+}
+.container1 .card:hover .box .box-content h2 {
+    color: rgba(0,0,0,0.05)
+}
+.container1 .card .box .box-content h3 {
+    font-size: 1.8em;
+    color: #777;
+    z-index: 1;
+    transition: 0.5s;
+}
+.container1 .card:hover .box .box-content h3 {
+    color: #fff;
+}
+.container1 .card .box .box-content a {
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    background: #03a9f4;
+    margin-top: 15px;
+    border-radius: 20px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 400;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+.container1 .card .box .box-content a:hover {
+    background: #ff568f;
+}
+.container2 {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 6rem;
+}
+.container2 .row .col h1 {
+    font-size: 5em;
+}
+footer {
+    background: #111;
+    height: auto;
+    width: 100%;
+    padding-top: 40px;
+    color: #fff;
+}
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h2 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: 3rem;
+}
+.footer-content p {
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+.socials {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+.socials li {
+    margin: 0 20px;
+}
+.socials a {
+    text-decoration: none;
+    color: #fff;
+}
+.socials a i {
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+.socials a:hover i{
+    color: aqua
+}
+.footer-email-form h2 {
+    margin-bottom: 2rem;
+}
+#footer-email {
+    width: 250px;
+    height: 43px;
+    border-radius: 20px;
+    padding-left: 0.8rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+#footer-email::placeholder {
+    color: #b1b1b1;
+}
+#footer-email-btn {
+    width: 100px;
+    height: 43px;
+    border-radius: 20px;
+    background-color: lightcoral;
+}
